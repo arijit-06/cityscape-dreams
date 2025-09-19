@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Header } from '@/components/Header';
 import { HeroSlider } from '@/components/HeroSlider';
 import { cities } from '@/data/cities';
 import '@/styles/Home.css';
@@ -16,6 +17,7 @@ const Index = () => {
 
   return (
     <div className="home-page">
+      <Header />
       <HeroSlider 
         slides={cities} 
         onSlideChange={handleSlideChange}
