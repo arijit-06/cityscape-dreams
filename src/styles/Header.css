@@ -1,14 +1,14 @@
 /* Header Styles */
 .header {
   --header-height: 70px;
-  --header-bg: rgba(0, 0, 0, 0.9);
-  --header-bg-mobile: rgba(0, 0, 0, 0.95);
+  --header-bg: transparent;
+  --header-bg-mobile: rgba(0, 0, 0, 0.9);
   --header-text: #ffffff;
   --header-text-hover: #e2e8f0;
-  --header-border: rgba(255, 255, 255, 0.1);
+  --header-border: transparent;
   --header-cta: #3b82f6;
   --header-cta-hover: #2563eb;
-  --header-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --header-shadow: none;
   
   position: fixed;
   top: 0;
@@ -16,8 +16,8 @@
   right: 0;
   height: var(--header-height);
   background: var(--header-bg);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--header-border);
+  backdrop-filter: none;
+  border-bottom: none;
   box-shadow: var(--header-shadow);
   z-index: 1000;
 }
